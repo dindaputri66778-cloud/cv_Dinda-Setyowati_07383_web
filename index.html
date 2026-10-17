@@ -1,327 +1,677 @@
 <!DOCTYPE html>
 <html lang="id">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-    <!-- Judul halaman -->
-    <title>Adellya Hasna Khairunisa - Profil Pribadi</title>
+    <title>Dinda Setyowati | Profil Pribadi</title>
+
+    <!-- Bootstrap -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+
+    <!-- CSS Custom -->
+    <link rel="stylesheet" href="style.css">
 </head>
 
 <body>
 
-    <!-- =========================================
-         HEADER
-         ========================================= -->
-    <header>
-        <h1>Adellya Hasna Khairunisa</h1>
-        <p>Mahasiswa Sistem Informasi | Universitas Dian Nuswantoro</p>
+    <!-- NAVBAR -->
+    <header class="site-header">
+        <nav class="navbar navbar-expand-lg">
+            <div class="container">
 
-        <hr>
+                <a class="brand navbar-brand" href="#">
+                    Dinda Setyowati
+                </a>
 
-        <nav>
-            <a href="about.html">Tentang Saya</a> |
-            <a href="#pendidikan">Pendidikan</a> |
-            <a href="#organisasi">Organisasi</a> |
-            <a href="#keahlian">Keahlian</a> |
-            <a href="#kontak">Kontak</a>
+                <button class="navbar-toggler" type="button"
+                    data-bs-toggle="collapse"
+                    data-bs-target="#menuNavigasi"
+                    aria-controls="menuNavigasi"
+                    aria-expanded="false"
+                    aria-label="Toggle navigation">
+
+                    <span class="navbar-toggler-icon"></span>
+
+                </button>
+
+                <div class="collapse navbar-collapse" id="menuNavigasi">
+
+                    <ul class="nav-links navbar-nav ms-auto">
+
+                        <li class="nav-item">
+                            <a class="nav-link" href="#tentang-saya">
+                                Tentang Saya
+                            </a>
+                        </li>
+
+                        <li class="nav-item">
+                            <a class="nav-link" href="#data-diri">
+                                Data Diri
+                            </a>
+                        </li>
+
+                        <li class="nav-item">
+                            <a class="nav-link" href="#pendidikan">
+                                Pendidikan
+                            </a>
+                        </li>
+
+                        <li class="nav-item">
+                            <a class="nav-link" href="#keahlian">
+                                Keahlian
+                            </a>
+                        </li>
+
+                        <li class="nav-item">
+                            <a class="nav-link" href="#pengalaman">
+                                Pengalaman
+                            </a>
+                        </li>
+
+                        <li class="nav-item">
+                            <a class="nav-link" href="#kontak">
+                                Kontak
+                            </a>
+                        </li>
+
+                    </ul>
+
+                </div>
+            </div>
         </nav>
     </header>
 
 
-    <!-- =========================================
-         MAIN
-         ========================================= -->
+    <!-- HERO -->
     <main>
 
-        <!-- =====================================
-             SECTION: TENTANG SAYA
-             ===================================== -->
-        <section id="tentang-saya">
-            <h2>Tentang Saya</h2>
+        <section class="hero">
 
-            <p>
-                Halo! Saya <strong>Adellya Hasna Khairunisa</strong>,
-                mahasiswa Program Studi <strong>Sistem Informasi</strong>
-                di <strong>Universitas Dian Nuswantoro (UDINUS)</strong>.
-            </p>
+            <div class="container">
 
-            <p>
-                Saya memiliki ketertarikan pada bidang teknologi informasi,
-                pemrograman, sistem informasi, desain, serta pengembangan
-                solusi digital yang dapat memberikan manfaat bagi pengguna.
-            </p>
+                <div class="hero-content">
 
-            <p>
-                Selain menjalani perkuliahan, saya aktif mengikuti kegiatan
-                organisasi untuk mengembangkan kemampuan komunikasi,
-                kerja sama tim, kepemimpinan, dan pengalaman berorganisasi.
-            </p>
+                    <div class="hero-text">
+
+                        <p class="hero-label">
+                            PROFIL PRIBADI
+                        </p>
+
+                        <h1>
+                            Halo, saya
+                            <span>Dinda Setyowati</span>
+                        </h1>
+
+                        <p class="hero-description">
+                            Mahasiswa Sistem Informasi di Universitas Dian
+                            Nuswantoro yang tertarik pada teknologi informasi,
+                            pengembangan website, sistem informasi, dan
+                            pengelolaan data.
+                        </p>
+
+                        <div class="hero-buttons">
+
+                            <a href="#tentang-saya" class="btn btn-primary">
+                                Tentang Saya
+                            </a>
+
+                            <a href="#kontak" class="btn btn-outline-primary">
+                                Hubungi Saya
+                            </a>
+
+                        </div>
+
+                    </div>
+
+
+                    <div class="profile-card">
+
+                        <div class="profile-icon">
+                            DS
+                        </div>
+
+                        <h2>Dinda Setyowati</h2>
+
+                        <p>
+                            Mahasiswa Sistem Informasi
+                        </p>
+
+                        <div class="profile-info">
+
+                            <div>
+                                <strong>Universitas</strong>
+                                <span>Universitas Dian Nuswantoro</span>
+                            </div>
+
+                            <div>
+                                <strong>Status</strong>
+                                <span>Mahasiswa</span>
+                            </div>
+
+                            <div>
+                                <strong>Program Studi</strong>
+                                <span>Sistem Informasi</span>
+                            </div>
+
+                        </div>
+
+                    </div>
+
+                </div>
+
+            </div>
+
         </section>
 
 
-        <!-- =====================================
-             SECTION: DATA PRIBADI
-             ===================================== -->
-        <section id="data-diri">
-            <h2>Data Pribadi</h2>
+        <!-- TENTANG SAYA -->
+        <section id="tentang-saya" class="content-section">
 
-            <table border="1" cellpadding="8" cellspacing="0">
-                <tr>
-                    <th>Informasi</th>
-                    <th>Keterangan</th>
-                </tr>
+            <div class="container">
 
-                <tr>
-                    <td>Nama Lengkap</td>
-                    <td>Adellya Hasna Khairunisa</td>
-                </tr>
+                <div class="section-heading">
 
-                <tr>
-                    <td>Status</td>
-                    <td>Mahasiswa</td>
-                </tr>
-
-                <tr>
-                    <td>Universitas</td>
-                    <td>Universitas Dian Nuswantoro (UDINUS)</td>
-                </tr>
-
-                <tr>
-                    <td>Program Studi</td>
-                    <td>Sistem Informasi</td>
-                </tr>
-
-                <tr>
-                    <td>Organisasi</td>
-                    <td>BEM FIK dan Paskibra UDINUS</td>
-                </tr>
-
-                <tr>
-                    <td>Minat</td>
-                    <td>
-                        Teknologi Informasi, Sistem Informasi,
-                        Pemrograman, Desain dan UI/UX
-                    </td>
-                </tr>
-            </table>
-        </section>
-
-
-        <!-- =====================================
-             SECTION: PENDIDIKAN
-             ===================================== -->
-        <section id="pendidikan">
-            <h2>Riwayat Pendidikan</h2>
-
-            <table border="1" cellpadding="8" cellspacing="0">
-                <thead>
-                    <tr>
-                        <th>Jenjang</th>
-                        <th>Nama Institusi</th>
-                        <th>Tahun</th>
-                    </tr>
-                </thead>
-
-                <tbody>
-                    <tr>
-                        <td>Perguruan Tinggi</td>
-                        <td>Universitas Dian Nuswantoro (UDINUS)</td>
-                        <td>2025 - Sekarang</td>
-                    </tr>
-
-                    <tr>
-                        <td>SMK</td>
-                        <td>SMK Negeri 9 Semarang</td>
-                        <td>2022-2025</td>
-                    </tr>
-
-                    <tr>
-                        <td>SMP</td>
-                        <td>SMP Negeri 42 Semarang</td>
-                        <td>2019-2022</td>
-                    </tr>
-                </tbody>
-            </table>
-        </section>
-
-
-        <!-- =====================================
-             SECTION: ORGANISASI
-             ===================================== -->
-        <section id="organisasi">
-            <h2>Pengalaman Organisasi</h2>
-
-            <article>
-                <h3>BEM FIK - Universitas Dian Nuswantoro</h3>
-
-                <p>
-                    Aktif dalam Badan Eksekutif Mahasiswa Fakultas Ilmu
-                    Komputer (BEM FIK) Universitas Dian Nuswantoro.
-                    Kegiatan organisasi membantu mengembangkan kemampuan
-                    bekerja sama, berkomunikasi, mengelola kegiatan,
-                    serta bertanggung jawab terhadap tugas yang diberikan.
-                </p>
-            </article>
-
-            <article>
-                <h3>Paskibra UDINUS</h3>
-
-                <p>
-                    Mengikuti kegiatan Paskibra di Universitas Dian Nuswantoro.
-                    Kegiatan ini memberikan pengalaman dalam kedisiplinan,
-                    kekompakan, tanggung jawab, dan kerja sama dalam tim.
-                </p>
-            </article>
-        </section>
-
-
-        <!-- =====================================
-             SECTION: KEAHLIAN
-             ===================================== -->
-        <section id="keahlian">
-            <h2>Keahlian (Skills)</h2>
-
-            <h3>Hard Skills</h3>
-
-            <ul>
-                <li>HTML</li>
-                <li>CSS</li>
-                <li>JavaScript dasar</li>
-                <li>PHP dasar</li>
-                <li>MySQL</li>
-                <li>Microsoft Office</li>
-                <li>Desain Grafis</li>
-                <li>UI/UX Design</li>
-            </ul>
-
-            <h3>Soft Skills</h3>
-
-            <ul>
-                <li>Komunikasi</li>
-                <li>Kerja sama tim</li>
-                <li>Manajemen waktu</li>
-                <li>Problem solving</li>
-                <li>Disiplin</li>
-                <li>Mudah beradaptasi</li>
-                <li>Mau belajar hal baru</li>
-            </ul>
-        </section>
-
-
-        <!-- =====================================
-             SECTION: PENGALAMAN / PROYEK
-             ===================================== -->
-        <section id="pengalaman">
-            <h2>Pengalaman dan Proyek</h2>
-
-            <ol>
-                <li>
-                    <strong>Proyek Website</strong>
-                    <p>
-                        Membuat dan mengembangkan website sederhana
-                        menggunakan HTML, CSS, JavaScript, PHP, dan database
-                        sesuai dengan kebutuhan proyek.
+                    <p class="section-label">
+                        PROFIL
                     </p>
-                </li>
 
-                <li>
-                    <strong>Proyek Sistem Informasi</strong>
-                    <p>
-                        Mempelajari proses analisis dan perancangan sistem
-                        informasi serta pembuatan rancangan antarmuka
-                        pengguna (UI/UX).
-                    </p>
-                </li>
+                    <h2>Tentang Saya</h2>
 
-                <li>
-                    <strong>Kegiatan Organisasi</strong>
-                    <p>
-                        Berpartisipasi dalam kegiatan BEM FIK dan Paskibra
-                        UDINUS untuk mengembangkan pengalaman organisasi,
-                        komunikasi, dan kerja sama tim.
-                    </p>
-                </li>
-            </ol>
+                </div>
+
+
+                <div class="about-grid">
+
+                    <div class="about-text">
+
+                        <p>
+                            Halo! Saya <strong>Dinda Setyowati</strong>,
+                            mahasiswa Program Studi
+                            <strong>Sistem Informasi</strong> di
+                            <strong>Universitas Dian Nuswantoro</strong>.
+                        </p>
+
+                        <p>
+                            Saya tertarik dengan bidang teknologi informasi,
+                            terutama dalam pengembangan website, sistem
+                            informasi, dan pengelolaan data.
+                        </p>
+
+                        <p>
+                            Selama kuliah, saya sedang belajar berbagai hal
+                            yang berhubungan dengan Sistem Informasi melalui
+                            tugas, proyek, dan kegiatan perkuliahan.
+                        </p>
+
+                        <p>
+                            Saya masih terus belajar untuk menambah kemampuan
+                            dan pengalaman di bidang teknologi. Saya juga ingin
+                            mencoba berbagai hal baru dan mengembangkan
+                            kemampuan selama menjalani perkuliahan.
+                        </p>
+
+                    </div>
+
+
+                    <div class="about-box">
+
+                        <h3>Minat Saya</h3>
+
+                        <div class="interest-list">
+
+                            <div class="interest-item">
+                                <span>01</span>
+                                <p>Pengembangan Website</p>
+                            </div>
+
+                            <div class="interest-item">
+                                <span>02</span>
+                                <p>Sistem Informasi</p>
+                            </div>
+
+                            <div class="interest-item">
+                                <span>03</span>
+                                <p>Pengelolaan Data</p>
+                            </div>
+
+                            <div class="interest-item">
+                                <span>04</span>
+                                <p>Teknologi Informasi</p>
+                            </div>
+
+                        </div>
+
+                    </div>
+
+                </div>
+
+            </div>
+
         </section>
 
 
-        <!-- =====================================
-             SECTION: TUJUAN KARIER
-             ===================================== -->
-        <section id="karier">
-            <h2>Tujuan Karier</h2>
+        <!-- DATA DIRI -->
+        <section id="data-diri" class="content-section section-light">
 
-            <p>
-                Saya memiliki tujuan untuk mengembangkan karier di bidang
-                teknologi informasi, khususnya sebagai
-                <strong>IT Consultant</strong>.
-            </p>
+            <div class="container">
 
-            <p>
-                Saya ingin terus meningkatkan kemampuan dalam bidang
-                sistem informasi, pemrograman, analisis data, keamanan
-                siber, manajemen proyek, serta teknologi digital.
-            </p>
+                <div class="section-heading">
+
+                    <p class="section-label">
+                        INFORMASI
+                    </p>
+
+                    <h2>Data Pribadi</h2>
+
+                </div>
+
+
+                <div class="table-card">
+
+                    <div class="table-responsive">
+
+                        <table class="table custom-table mb-0">
+
+                            <thead>
+
+                                <tr>
+                                    <th>Informasi</th>
+                                    <th>Keterangan</th>
+                                </tr>
+
+                            </thead>
+
+                            <tbody>
+
+                                <tr>
+                                    <td>Nama Lengkap</td>
+                                    <td>Dinda Setyowati</td>
+                                </tr>
+
+                                <tr>
+                                    <td>Status</td>
+                                    <td>Mahasiswa</td>
+                                </tr>
+
+                                <tr>
+                                    <td>Universitas</td>
+                                    <td>
+                                        Universitas Dian Nuswantoro
+                                    </td>
+                                </tr>
+
+                                <tr>
+                                    <td>Program Studi</td>
+                                    <td>Sistem Informasi</td>
+                                </tr>
+
+                                <tr>
+                                    <td>Minat</td>
+                                    <td>
+                                        Teknologi Informasi,
+                                        pengembangan website,
+                                        sistem informasi, dan
+                                        pengelolaan data
+                                    </td>
+                                </tr>
+
+                            </tbody>
+
+                        </table>
+
+                    </div>
+
+                </div>
+
+            </div>
+
         </section>
 
 
-        <!-- =====================================
-             SECTION: KONTAK
-             ===================================== -->
-        <section id="kontak">
-            <h2>Kontak</h2>
+        <!-- PENDIDIKAN -->
+        <section id="pendidikan" class="content-section">
 
-            <ul>
-                <li>
-                    Email:
-                    <a href="mailto:[email-anda]">
-                        [email-anda]
-                    </a>
-                </li>
+            <div class="container">
 
-                <li>
-                    Instagram:
-                    <a href="[link-instagram]" target="_blank">
-                        [username Instagram]
-                    </a>
-                </li>
+                <div class="section-heading">
 
-                <li>
-                    LinkedIn:
-                    <a href="[link-linkedin]" target="_blank">
-                        [Profil LinkedIn]
-                    </a>
-                </li>
+                    <p class="section-label">
+                        PERJALANAN AKADEMIK
+                    </p>
 
-                <li>
-                    GitHub:
-                    <a href="[link-github]" target="_blank">
-                        [Profil GitHub]
-                    </a>
-                </li>
-            </ul>
+                    <h2>Riwayat Pendidikan</h2>
+
+                </div>
+
+
+                <div class="education-list">
+
+                    <div class="education-item">
+
+                        <div class="education-year">
+                            2013 - 2019
+                        </div>
+
+                        <div class="education-content">
+
+                            <span>SD</span>
+
+                            <h3>
+                                SD Negeri 3 Tegowanu Kulon
+                            </h3>
+
+                        </div>
+
+                    </div>
+
+
+                    <div class="education-item">
+
+                        <div class="education-year">
+                            2019 - 2022
+                        </div>
+
+                        <div class="education-content">
+
+                            <span>SMP</span>
+
+                            <h3>
+                                SMP Unggulan Pondok Modern Selamat Kendal
+                            </h3>
+
+                        </div>
+
+                    </div>
+
+
+                    <div class="education-item">
+
+                        <div class="education-year">
+                            2022 - 2025
+                        </div>
+
+                        <div class="education-content">
+
+                            <span>SMK</span>
+
+                            <h3>
+                                SMK Miftahul Huda Ngroto
+                            </h3>
+
+                        </div>
+
+                    </div>
+
+
+                    <div class="education-item">
+
+                        <div class="education-year">
+                            2025 - Sekarang
+                        </div>
+
+                        <div class="education-content">
+
+                            <span>Universitas</span>
+
+                            <h3>
+                                Universitas Dian Nuswantoro
+                            </h3>
+
+                            <p>
+                                Program Studi Sistem Informasi
+                            </p>
+
+                        </div>
+
+                    </div>
+
+                </div>
+
+            </div>
+
+        </section>
+
+
+        <!-- KEAHLIAN -->
+        <section id="keahlian" class="content-section section-light">
+
+            <div class="container">
+
+                <div class="section-heading">
+
+                    <p class="section-label">
+                        KEMAMPUAN
+                    </p>
+
+                    <h2>Keahlian</h2>
+
+                </div>
+
+
+                <div class="skills-grid">
+
+                    <div class="skill-card">
+
+                        <div class="skill-number">
+                            01
+                        </div>
+
+                        <h3>Hard Skills</h3>
+
+                        <ul>
+                            <li>Microsoft Office</li>
+                            <li>HTML dan dasar pemrograman web</li>
+                            <li>Pengelolaan data</li>
+                        </ul>
+
+                    </div>
+
+
+                    <div class="skill-card">
+
+                        <div class="skill-number">
+                            02
+                        </div>
+
+                        <h3>Soft Skills</h3>
+
+                        <ul>
+                            <li>Kerja sama dalam tim</li>
+                            <li>Komunikasi efektif</li>
+                            <li>Manajemen waktu</li>
+                        </ul>
+
+                    </div>
+
+                </div>
+
+            </div>
+
+        </section>
+
+
+        <!-- PENGALAMAN -->
+        <section id="pengalaman" class="content-section">
+
+            <div class="container">
+
+                <div class="section-heading">
+
+                    <p class="section-label">
+                        KEGIATAN
+                    </p>
+
+                    <h2>Pengalaman</h2>
+
+                </div>
+
+
+                <div class="experience-grid">
+
+                    <article class="experience-card">
+
+                        <span>01</span>
+
+                        <h3>
+                            Tugas dan Proyek Perkuliahan
+                        </h3>
+
+                        <p>
+                            Mengerjakan berbagai tugas dan proyek selama
+                            menjalani perkuliahan Sistem Informasi.
+                        </p>
+
+                    </article>
+
+
+                    <article class="experience-card">
+
+                        <span>02</span>
+
+                        <h3>
+                            Mengikuti Seminar SENSASI
+                        </h3>
+
+                        <p>
+                            Mengikuti seminar SENSASI dengan tema
+                            <em>
+                                "The Future of Digital Blockchain and
+                                Cryptocurrency Technology"
+                            </em>
+                            untuk menambah pengetahuan tentang perkembangan
+                            teknologi digital, blockchain, dan cryptocurrency.
+                        </p>
+
+                    </article>
+
+
+                    <article class="experience-card">
+
+                        <span>03</span>
+
+                        <h3>
+                            Volunteer Kegiatan Edukasi
+                        </h3>
+
+                        <p>
+                            Menjadi volunteer dalam kegiatan edukasi dan
+                            membantu kegiatan eksperimen untuk anak-anak.
+                        </p>
+
+                    </article>
+
+
+                    <article class="experience-card">
+
+                        <span>04</span>
+
+                        <h3>
+                            Tugas Teknologi Informasi
+                        </h3>
+
+                        <p>
+                            Mengerjakan tugas yang berkaitan dengan teknologi
+                            informasi selama perkuliahan.
+                        </p>
+
+                    </article>
+
+
+                    <article class="experience-card">
+
+                        <span>05</span>
+
+                        <h3>
+                            Pengembangan Kemampuan
+                        </h3>
+
+                        <p>
+                            Mengembangkan kemampuan dan pengalaman melalui
+                            berbagai proyek serta kegiatan selama perkuliahan.
+                        </p>
+
+                    </article>
+
+                </div>
+
+            </div>
+
+        </section>
+
+
+        <!-- KONTAK -->
+        <section id="kontak" class="contact-section">
+
+            <div class="container">
+
+                <div class="contact-content">
+
+                    <div>
+
+                        <p class="section-label">
+                            KONTAK
+                        </p>
+
+                        <h2>
+                            Mari Terhubung
+                        </h2>
+
+                        <p>
+                            Kamu dapat menghubungi saya melalui email atau
+                            Instagram.
+                        </p>
+
+                    </div>
+
+
+                    <div class="contact-links">
+
+                        <a href="mailto:dindaputri66778@gmail.com">
+                            <span>Email</span>
+                            dindaputri66778@gmail.com
+                        </a>
+
+                        <a href="https://www.instagram.com/dnnndaa.a"
+                            target="_blank">
+                            <span>Instagram</span>
+                            @dnnndaa.a
+                        </a>
+
+                    </div>
+
+                </div>
+
+            </div>
+
         </section>
 
     </main>
 
 
-    <!-- =========================================
-         FOOTER
-         ========================================= -->
+    <!-- FOOTER -->
     <footer>
-        <hr>
 
-        <p>
-            &copy; 2026 Adellya Hasna Khairunisa.
-            Seluruh hak cipta dilindungi.
-        </p>
+        <div class="container">
 
-        <p>
-            Mahasiswa Sistem Informasi -
-            Universitas Dian Nuswantoro
-        </p>
+            <p>
+                &copy; 2026 Dinda Setyowati.
+            </p>
+
+            <p>
+                Mahasiswa Sistem Informasi -
+                Universitas Dian Nuswantoro
+            </p>
+
+        </div>
+
     </footer>
 
+
+    <!-- Bootstrap JavaScript -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+
 </body>
+
 </html>

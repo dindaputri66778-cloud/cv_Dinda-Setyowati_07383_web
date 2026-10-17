@@ -1,0 +1,646 @@
+/* =========================================
+   DASAR
+   ========================================= */
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    font-family: Arial, Helvetica, sans-serif;
+    background-color: #f8fafc;
+    color: #1e293b;
+    line-height: 1.7;
+}
+
+a {
+    text-decoration: none;
+}
+
+.container {
+    max-width: 1100px;
+}
+
+
+/* =========================================
+   NAVBAR
+   ========================================= */
+
+.site-header {
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+}
+
+.site-header .navbar {
+    background-color: #172554;
+    padding: 15px 0;
+}
+
+.brand {
+    color: white !important;
+    font-size: 22px;
+    font-weight: 700;
+}
+
+.nav-links .nav-link {
+    color: #dbeafe !important;
+    margin-left: 8px;
+    padding: 8px 12px !important;
+    border-radius: 8px;
+    transition: 0.3s;
+}
+
+.nav-links .nav-link:hover {
+    background-color: #1e3a8a;
+    color: white !important;
+}
+
+.navbar-toggler {
+    border-color: rgba(255, 255, 255, 0.5);
+}
+
+.navbar-toggler-icon {
+    filter: brightness(0) invert(1);
+}
+
+
+/* =========================================
+   HERO
+   ========================================= */
+
+.hero {
+    background: linear-gradient(135deg, #eff6ff, #dbeafe);
+    padding: 90px 0;
+}
+
+.hero-content {
+    display: grid;
+    grid-template-columns: 1.4fr 0.8fr;
+    gap: 60px;
+    align-items: center;
+}
+
+.hero-label,
+.section-label {
+    color: #2563eb;
+    font-size: 13px;
+    font-weight: 700;
+    letter-spacing: 2px;
+    margin-bottom: 12px;
+}
+
+.hero h1 {
+    color: #172554;
+    font-size: 52px;
+    line-height: 1.15;
+    font-weight: 700;
+}
+
+.hero h1 span {
+    display: block;
+    color: #2563eb;
+}
+
+.hero-description {
+    max-width: 650px;
+    margin-top: 20px;
+    color: #475569;
+    font-size: 17px;
+}
+
+.hero-buttons {
+    display: flex;
+    gap: 12px;
+    margin-top: 30px;
+}
+
+.hero-buttons .btn {
+    padding: 11px 22px;
+    border-radius: 9px;
+    font-weight: 600;
+}
+
+
+/* =========================================
+   PROFILE CARD
+   ========================================= */
+
+.profile-card {
+    background-color: white;
+    padding: 35px;
+    border-radius: 20px;
+    box-shadow: 0 15px 40px rgba(30, 64, 175, 0.12);
+    text-align: center;
+}
+
+.profile-icon {
+    width: 100px;
+    height: 100px;
+    margin: 0 auto 20px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: #2563eb;
+    color: white;
+    border-radius: 50%;
+    font-size: 30px;
+    font-weight: 700;
+}
+
+.profile-card h2 {
+    color: #172554;
+    font-size: 24px;
+}
+
+.profile-card > p {
+    color: #64748b;
+    margin-bottom: 25px;
+}
+
+.profile-info {
+    text-align: left;
+}
+
+.profile-info div {
+    border-top: 1px solid #e2e8f0;
+    padding: 13px 0;
+}
+
+.profile-info strong {
+    display: block;
+    color: #334155;
+    font-size: 13px;
+}
+
+.profile-info span {
+    color: #64748b;
+    font-size: 14px;
+}
+
+
+/* =========================================
+   SECTION
+   ========================================= */
+
+.content-section {
+    padding: 85px 0;
+}
+
+.section-light {
+    background-color: #f1f5f9;
+}
+
+.section-heading {
+    margin-bottom: 40px;
+}
+
+.section-heading h2 {
+    color: #172554;
+    font-size: 36px;
+    font-weight: 700;
+}
+
+
+/* =========================================
+   TENTANG SAYA
+   ========================================= */
+
+.about-grid {
+    display: grid;
+    grid-template-columns: 1.2fr 0.8fr;
+    gap: 50px;
+}
+
+.about-text p {
+    color: #475569;
+    margin-bottom: 18px;
+}
+
+.about-text strong {
+    color: #172554;
+}
+
+.about-box {
+    background-color: white;
+    padding: 30px;
+    border-radius: 18px;
+    box-shadow: 0 8px 25px rgba(15, 23, 42, 0.07);
+}
+
+.about-box h3 {
+    color: #172554;
+    margin-bottom: 20px;
+}
+
+.interest-item {
+    display: flex;
+    gap: 15px;
+    align-items: center;
+    border-bottom: 1px solid #e2e8f0;
+    padding: 13px 0;
+}
+
+.interest-item:last-child {
+    border-bottom: none;
+}
+
+.interest-item span {
+    color: #2563eb;
+    font-size: 13px;
+    font-weight: 700;
+}
+
+.interest-item p {
+    margin: 0;
+    color: #475569;
+}
+
+
+/* =========================================
+   DATA DIRI
+   ========================================= */
+
+.table-card {
+    background-color: white;
+    border-radius: 16px;
+    overflow: hidden;
+    box-shadow: 0 8px 25px rgba(15, 23, 42, 0.07);
+}
+
+.custom-table {
+    margin: 0;
+}
+
+.custom-table thead th {
+    background-color: #172554;
+    color: white;
+    padding: 17px;
+    border: none;
+}
+
+.custom-table tbody td {
+    padding: 17px;
+    color: #475569;
+    border-color: #e2e8f0;
+}
+
+.custom-table tbody td:first-child {
+    color: #172554;
+    font-weight: 600;
+}
+
+
+/* =========================================
+   PENDIDIKAN
+   ========================================= */
+
+.education-list {
+    border-left: 3px solid #bfdbfe;
+    padding-left: 30px;
+}
+
+.education-item {
+    position: relative;
+    background-color: white;
+    padding: 25px;
+    margin-bottom: 20px;
+    border-radius: 14px;
+    box-shadow: 0 6px 20px rgba(15, 23, 42, 0.06);
+}
+
+.education-item::before {
+    content: "";
+    position: absolute;
+    width: 13px;
+    height: 13px;
+    background-color: #2563eb;
+    border-radius: 50%;
+    left: -38px;
+    top: 30px;
+}
+
+.education-year {
+    color: #2563eb;
+    font-size: 13px;
+    font-weight: 700;
+    margin-bottom: 5px;
+}
+
+.education-content span {
+    color: #64748b;
+    font-size: 13px;
+}
+
+.education-content h3 {
+    color: #172554;
+    font-size: 19px;
+    margin: 5px 0;
+}
+
+.education-content p {
+    color: #64748b;
+    margin: 0;
+}
+
+
+/* =========================================
+   KEAHLIAN
+   ========================================= */
+
+.skills-grid {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 25px;
+}
+
+.skill-card {
+    background-color: white;
+    padding: 35px;
+    border-radius: 18px;
+    box-shadow: 0 8px 25px rgba(15, 23, 42, 0.07);
+}
+
+.skill-number {
+    color: #2563eb;
+    font-weight: 700;
+    font-size: 14px;
+    margin-bottom: 12px;
+}
+
+.skill-card h3 {
+    color: #172554;
+    font-size: 25px;
+    margin-bottom: 20px;
+}
+
+.skill-card ul {
+    padding-left: 20px;
+    margin: 0;
+}
+
+.skill-card li {
+    color: #475569;
+    margin-bottom: 10px;
+}
+
+
+/* =========================================
+   PENGALAMAN
+   ========================================= */
+
+.experience-grid {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 25px;
+}
+
+.experience-card {
+    background-color: white;
+    padding: 30px;
+    border-radius: 18px;
+    box-shadow: 0 8px 25px rgba(15, 23, 42, 0.07);
+    transition: 0.3s;
+}
+
+.experience-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 14px 30px rgba(15, 23, 42, 0.11);
+}
+
+.experience-card span {
+    color: #2563eb;
+    font-size: 13px;
+    font-weight: 700;
+}
+
+.experience-card h3 {
+    color: #172554;
+    font-size: 20px;
+    margin: 10px 0;
+}
+
+.experience-card p {
+    color: #64748b;
+    font-size: 14px;
+    margin: 0;
+}
+
+
+/* =========================================
+   KONTAK
+   ========================================= */
+
+.contact-section {
+    background-color: #172554;
+    color: white;
+    padding: 70px 0;
+}
+
+.contact-content {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 50px;
+    align-items: center;
+}
+
+.contact-section .section-label {
+    color: #93c5fd;
+}
+
+.contact-section h2 {
+    font-size: 38px;
+    margin-bottom: 12px;
+}
+
+.contact-section p {
+    color: #cbd5e1;
+}
+
+.contact-links {
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+}
+
+.contact-links a {
+    background-color: rgba(255, 255, 255, 0.08);
+    color: white;
+    padding: 15px 18px;
+    border-radius: 10px;
+    transition: 0.3s;
+}
+
+.contact-links a:hover {
+    background-color: rgba(255, 255, 255, 0.15);
+}
+
+.contact-links span {
+    display: block;
+    color: #93c5fd;
+    font-size: 12px;
+    font-weight: 700;
+    margin-bottom: 3px;
+}
+
+
+/* =========================================
+   FOOTER
+   ========================================= */
+
+footer {
+    background-color: #0f172a;
+    color: #cbd5e1;
+    padding: 25px 0;
+    text-align: center;
+}
+
+footer p {
+    margin: 3px 0;
+    font-size: 13px;
+}
+
+
+/* =========================================
+   RESPONSIVE TABLET
+   ========================================= */
+
+@media (max-width: 992px) {
+
+    .hero-content {
+        grid-template-columns: 1fr;
+        gap: 40px;
+    }
+
+    .hero-text {
+        text-align: center;
+    }
+
+    .hero-description {
+        margin-left: auto;
+        margin-right: auto;
+    }
+
+    .hero-buttons {
+        justify-content: center;
+    }
+
+    .profile-card {
+        max-width: 500px;
+        margin: auto;
+    }
+
+    .about-grid {
+        grid-template-columns: 1fr;
+    }
+
+    .contact-content {
+        grid-template-columns: 1fr;
+    }
+
+    .nav-links {
+        margin-top: 10px;
+    }
+
+    .nav-links .nav-link {
+        margin-left: 0;
+    }
+}
+
+
+/* =========================================
+   RESPONSIVE HP
+   ========================================= */
+
+@media (max-width: 768px) {
+
+    .hero {
+        padding: 65px 20px;
+    }
+
+    .hero h1 {
+        font-size: 38px;
+    }
+
+    .hero-description {
+        font-size: 15px;
+    }
+
+    .content-section {
+        padding: 60px 20px;
+    }
+
+    .section-heading h2 {
+        font-size: 30px;
+    }
+
+    .skills-grid,
+    .experience-grid {
+        grid-template-columns: 1fr;
+    }
+
+    .contact-section {
+        padding: 60px 20px;
+    }
+
+    .contact-section h2 {
+        font-size: 32px;
+    }
+
+    .education-list {
+        padding-left: 20px;
+    }
+
+    .education-item::before {
+        left: -28px;
+    }
+
+    .hero-buttons {
+        flex-direction: column;
+    }
+
+    .hero-buttons .btn {
+        width: 100%;
+    }
+}
+
+
+/* =========================================
+   RESPONSIVE HP KECIL
+   ========================================= */
+
+@media (max-width: 480px) {
+
+    .hero h1 {
+        font-size: 32px;
+    }
+
+    .profile-card {
+        padding: 25px 20px;
+    }
+
+    .section-heading h2 {
+        font-size: 27px;
+    }
+
+    .about-box,
+    .skill-card,
+    .experience-card {
+        padding: 23px;
+    }
+
+    .custom-table {
+        font-size: 13px;
+    }
+
+    .custom-table thead th,
+    .custom-table tbody td {
+        padding: 12px;
+    }
+}
