@@ -644,3 +644,52 @@ footer p {
         padding: 12px;
     }
 }
+
+
+/* MODE GELAP */
+body.dark-mode {
+    background-color: #0f172a;
+    color: #e2e8f0;
+}
+
+body.dark-mode .content-section,
+body.dark-mode .section-light {
+    background-color: #1e293b;
+}
+
+body.dark-mode .hero {
+    background: linear-gradient(135deg, #1e293b, #334155);
+}
+
+body.dark-mode .profile-card,
+body.dark-mode .about-box,
+body.dark-mode .table-card,
+body.dark-mode .education-item,
+body.dark-mode .skill-card,
+body.dark-mode .experience-card {
+    background-color: #334155;
+    color: #e2e8f0;
+}
+
+body.dark-mode h2,
+body.dark-mode h3,
+body.dark-mode .about-text strong,
+body.dark-mode .education-content h3,
+body.dark-mode .custom-table tbody td:first-child {
+    color: #f8fafc;
+}
+
+body.dark-mode p,
+body.dark-mode li,
+body.dark-mode .about-text p,
+body.dark-mode .education-content p,
+body.dark-mode .education-content span,
+body.dark-mode .interest-item p,
+body.dark-mode .profile-info span,
+body.dark-mode .custom-table tbody td {
+    color: #cbd5e1;
+}
+
+body.dark-mode .custom-table tbody td {
+    background-color: #334155;
+}
